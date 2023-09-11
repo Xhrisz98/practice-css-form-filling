@@ -1,0 +1,162 @@
+
+*{
+  
+  font-size: 24px;
+}
+body 
+{
+  background: radial-gradient(circle,#038844,#15845d);
+}
+.conteiner
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:  80px repeat(2, 1fr) 80px;
+  grid-auto-flow: dense;
+  height: 100vh;
+  
+}
+.conteiner-nav
+{
+  background-color: #00ff99;
+  grid-column: 1/4;
+}
+.conteiner__nav-ul
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.conteiner__nav__ul-li
+{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+ 
+}
+.conteiner__nav__ul-li a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.conteiner__nav__ul-li:hover 
+{
+  background: radial-gradient(circle, #02564f, #069f95);
+  height: 100%;
+  padding-top: 20px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.conteiner__nav__ul-li:hover a
+{
+ color: #000;
+}
+
+.conteiner-section
+{
+  grid-row: 2/4;
+  grid-column: 1/5;
+  display: flex;
+  background: radial-gradient(circle, #ccc, #888);
+  
+}
+.conteiner__section-side
+{
+  
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 1400px;
+}
+/*here I work in my section*/
+.form
+{
+  flex: 1;
+  padding: 50px;
+  order: 2;
+  max-width: 700px;
+}
+.form__input-type
+{
+  width: 100%;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: 5px solid #0088ff;
+}
+.form__input-type:focus
+{
+  outline: none;
+
+}
+.form-input textarea
+{
+  min-height: 150px;
+  resize: none;
+}
+.conteiner-flex
+{
+  flex:1;
+  order: 1;
+  display: flex;
+  padding: 20px;
+  max-width: 500px;
+}
+.conteiner-flex div
+{
+  margin: auto;
+  border-radius: 50%;
+  width: 100%;
+  border: 10px solid #888;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.conteiner-flex div img 
+{
+  padding: 80px;
+}
+
+.conteiner__section-aside
+{
+  
+  background-color: #dd0077;
+  flex: 1;
+  
+}
+
+.conteiner-footer
+{
+  background-color: #0066ff;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
